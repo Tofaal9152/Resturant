@@ -1,9 +1,12 @@
+import Hero from "@/components/Hero";
+import { Button } from "@/components/ui/button";
+
 const page = () => {
   return (
     <div>
-      Enter
+      <Hero />
     </div>
   );
-}
+};
 
 export default page;

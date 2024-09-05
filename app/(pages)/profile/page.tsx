@@ -50,11 +50,11 @@ const Page = () => {
   };
 
   return (
-    <div className="text-black bg-[#F8F9FA] h-[88.5vh] flex flex-col p-4">
+    <div className="text-black bg-slate-50  h-[88.5vh] flex flex-col p-4">
       <div className="flex items-center justify-center mb-8">
         <div className="flex items-center justify-center  space-x-4">
           <div className="relative cursor-pointer group">
-            <Avatar className="w-20 h-20 bg-gray-200">
+            <Avatar className="w-20 h-20 bg-gray-200 ring-2 ring-[#3C72BE]">
               {selectedImage ? (
                 <AvatarImage src={selectedImage as string} alt="Profile" />
               ) : (
@@ -83,7 +83,7 @@ const Page = () => {
               onChange={handleChange}
               value={input.name}
               type="text"
-              className="flex-grow bg-transparent outline-none py-2 px-4 rounded-md focus:outline-none "
+              className="flex-grow text-xl font-bold bg-transparent outline-none py-2 px-4 rounded-md focus:outline-none "
               id="name"
             />
           </div>
@@ -95,7 +95,7 @@ const Page = () => {
         className="w-full max-w-md space-y-6 mx-auto "
       >
         <div className="flex items-center space-x-4">
-          <Mail className="text-[#9873cf]" />
+          <Mail className="text-[#3C72BE]" />
           <label
             htmlFor="email"
             className="w-24 text-sm font-medium text-gray-700"
@@ -113,7 +113,7 @@ const Page = () => {
         </div>
 
         <div className="flex items-center space-x-4">
-          <MapPin className="text-[#9873cf]" />
+          <MapPin className="text-[#3C72BE]" />
           <label
             htmlFor="address"
             className="w-24 text-sm font-medium text-gray-700"
@@ -131,7 +131,7 @@ const Page = () => {
         </div>
 
         <div className="flex items-center space-x-4">
-          <ClipboardTypeIcon className="text-[#9873cf]" />
+          <ClipboardTypeIcon className="text-[#3C72BE]" />
           <label
             htmlFor="city"
             className="w-24 text-sm font-medium text-gray-700"
@@ -149,7 +149,7 @@ const Page = () => {
         </div>
 
         <div className="flex items-center space-x-4">
-          <LucideArrowUpAz className="text-[#9873cf]" />
+          <LucideArrowUpAz className="text-[#3C72BE]" />
           <label
             htmlFor="country"
             className="w-24 text-sm font-medium text-gray-700"
@@ -167,7 +167,7 @@ const Page = () => {
           />
         </div>
 
-        <Button type="submit" variant="outline" className="w-full bg-[#9873cf] text-white">
+        <Button type="submit" variant="outline" className="w-full bg-[#3C72BE] text-white">
           Update
         </Button>
       </form>

@@ -60,18 +60,18 @@ const Login = () => {
   const loading = false;
 
   return (
-    <div className="flex items-center justify-center w-screen h-screen bg-[#000319]">
+    <div className="flex absolute z-50  items-center justify-center w-full h-screen bg-[#000319] top-0">
       <form
         onSubmit={handleSubmit}
         className="p-8 rounded-lg shadow-lg w-96 bg-white"
       >
-        <h1 className="text-2xl font-semibold mb-6 text-center text-[#9873cf]">
+        <h1 className="text-2xl font-semibold mb-6 text-center text-[#3C72BE]">
           Login
         </h1>
 
         <div className="mb-4">
-          <div className="flex items-center border border-[#CBACF9] rounded-md p-2 bg-gray-100">
-            <Mail className="text-[#CBACF9] mr-2" />
+          <div className="flex items-center border border-[#3C72BE] rounded-md p-2 bg-slate-50">
+            <Mail className="text-[#3C72BE] mr-2" />
             <Input
               type="text"
               name="email"
@@ -87,8 +87,8 @@ const Login = () => {
         </div>
 
         <div className="mb-6">
-          <div className="flex items-center border border-[#CBACF9] rounded-md p-2 bg-gray-100">
-            <Eye className="text-[#CBACF9] mr-2" />
+          <div className="flex items-center border border-[#3C72BE] rounded-md p-2 bg-slate-50">
+            <Eye className="text-[#3C72BE] mr-2" />
             <Input
               type="password"
               name="password"
@@ -106,7 +106,7 @@ const Login = () => {
         <Button
           type="submit"
           disabled={loading}
-          className="w-full bg-[#9873cf] text-white py-2 rounded-md hover:bg-[#af94f3] transition-colors shadow-sm"
+          className="w-full bg-[#3C72BE] text-white py-2 rounded-md  transition-colors shadow-sm"
         >
           {loading ? (
             <>
@@ -122,7 +122,7 @@ const Login = () => {
           <p className="text-gray-600 text-sm">
             <Link
               href="/auth/forgot-password"
-              className="text-[#9873cf] hover:underline"
+              className="text-[#3C72BE] hover:underline"
             >
               Forgot Password?
             </Link>
@@ -134,7 +134,7 @@ const Login = () => {
             Don't have an account?
             <Link
               href="/auth/sign-up"
-              className="text-[#9873cf] hover:underline ml-1"
+              className="text-[#3C72BE] hover:underline ml-1"
             >
               Sign up
             </Link>

@@ -46,45 +46,45 @@ const Navbar = () => {
   const loading = false;
 
   return (
-    <div className="bg-[#F8F9FA] container mx-auto px-[5%] py-4 sticky w-full top-0 z-50">
+    <div className="bg-slate-50  px-[5%] py-4 sticky w-full top-0 z-40">
       <div className="container mx-auto flex items-center justify-between">
-        <div className="text-2xl font-bold text-[#9873cf]">
+        <div className="text-2xl font-bold text-[#3C72BE]">
           <Link href="/">ToLizza</Link>
         </div>
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-4 items-center">
-          <Link href="/" className="text-gray-700 hover:text-[#9873cf]">
+          <Link href="/" className="text-gray-700 hover:text-[#3C72BE]">
             Home
           </Link>
-          <Link href="/profile" className="text-gray-700 hover:text-[#9873cf]">
+          <Link href="/profile" className="text-gray-700 hover:text-[#3C72BE]">
             Profile
           </Link>
           <Link
             href="/order/status"
-            className="text-gray-700 hover:text-[#9873cf]"
+            className="text-gray-700 hover:text-[#3C72BE]"
           >
             Order
           </Link>
           {admin && (
             <Menubar>
               <MenubarMenu>
-                <MenubarTrigger className="text-gray-700 hover:text-[#9873cf]">
+                <MenubarTrigger className="outline-none border-none bg-[#3C72BE] text-[#fff]">
                   Dashboard
                 </MenubarTrigger>
                 <MenubarContent>
-                  <Link href="/admin/restaurant">
-                    <MenubarItem className="cursor-pointer hover:bg-[#9873cf] hover:text-white">
-                      Restaurant
+                  <Link href="/admin/pharmacy">
+                    <MenubarItem className="cursor-pointer hover:bg-[#3C72BE] hover:text-white">
+                      Pharmacy
                     </MenubarItem>
                   </Link>
                   <Link href="/admin/menu">
-                    <MenubarItem className="cursor-pointer hover:bg-[#9873cf] hover:text-white">
+                    <MenubarItem className="cursor-pointer hover:bg-[#3C72BE] hover:text-white">
                       Menu
                     </MenubarItem>
                   </Link>
                   <Link href="/admin/order">
-                    <MenubarItem className="cursor-pointer hover:bg-[#9873cf] hover:text-white">
-                      Order
+                    <MenubarItem className="cursor-pointer hover:bg-[#3C72BE] hover:text-white">
+                    Pharmacy Orders
                     </MenubarItem>
                   </Link>
                 </MenubarContent>
@@ -94,10 +94,10 @@ const Navbar = () => {
         </div>
         <div className="md:flex hidden  items-center space-x-4">
           <Link href="/cart" className="relative flex items-center">
-            <ShoppingCart className="h-6 w-6 text-gray-700 hover:text-[#9873cf]" />
+            <ShoppingCart className="h-6 w-6 text-gray-700 hover:text-[#3C72BE]" />
             <Button
               size={"icon"}
-              className="absolute -top-3 right-[2px] text-xs rounded-full bg-[#9873cf] text-white h-4 w-4 flex items-center justify-center"
+              className="absolute -top-3 right-[2px] text-xs rounded-full bg-[#3C72BE] text-white h-4 w-4 flex items-center justify-center"
             >
               1
             </Button>
@@ -129,7 +129,7 @@ const Navbar = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem>
-                <Button className="bg-[#9873cf] w-full text-white py-2 px-4 rounded-md hover:bg-[#af94f3] transition-colors">
+                <Button className="bg-[#3C72BE] w-full text-white py-2 px-4 rounded-md hover:bg-[#af94f3] transition-colors">
                   Log out
                 </Button>
               </DropdownMenuItem>
@@ -162,7 +162,7 @@ const MobileNAvigation = () => {
         <SheetContent side="right" className="w-80 p-4 flex flex-col">
           <SheetHeader>
             <SheetTitle className="text-xl font-semibold flex items-center justify-between mt-8 mb-2">
-              <div className="text-2xl font-bold text-[#9873cf]">
+              <div className="text-2xl font-bold text-[#3C72BE]">
                 <Link href="/">ToLizza</Link>
               </div>
               <DropdownMenu>
@@ -208,18 +208,18 @@ const MobileNAvigation = () => {
                   <span>Menu</span>
                 </Link>
                 <Link
-                  href="/admin/restaurant"
+                  href="/admin/pharmacy"
                   className="flex items-center space-x-3"
                 >
                   <UtensilsCrossed />
-                  <span>Restaurant</span>
+                  <span>Pharmacy</span>
                 </Link>
                 <Link
                   href="/admin/order"
                   className="flex items-center space-x-3"
                 >
                   <PackageCheck />
-                  <span>Restaurant Orders</span>
+                  <span>Pharmacy Orders</span>
                 </Link>
               </>
             )}
@@ -230,13 +230,13 @@ const MobileNAvigation = () => {
                 <AvatarImage src="https://github.com/shadcn.png" />
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
-              <span className="text-xl font-semibold text-[#9873cf]">
+              <span className="text-xl font-semibold text-[#3C72BE]">
                 Md Tofaal Ahmed
               </span>
             </div>
             <div>
               <SheetClose asChild>
-                <Button className="bg-[#9873cf] w-full  hover:bg-[#af94f3] transition-colors">
+                <Button className="bg-[#3C72BE] w-full  hover:bg-[#af94f3] transition-colors">
                   Log out
                 </Button>
               </SheetClose>

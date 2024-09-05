@@ -25,13 +25,13 @@ const page = () => {
           </div>
         </div>
         <div className="w-full md:w-1/2 space-y-4">
-          <h1 className="text-3xl font-bold text-[#9873CF]">PharmaEase</h1>
+          <h1 className="text-3xl font-bold text-[#3C72BE]">PharmaEase</h1>
           <div className="flex space-x-2">
-            <Badge className="bg-[#9873CF] text-white">Antibiotic</Badge>
-            <Badge className="bg-[#9873CF] text-white">Pain Reliever</Badge>
+            <Badge className="bg-[#3C72BE] text-white">Antibiotic</Badge>
+            <Badge className="bg-[#3C72BE] text-white">Pain Reliever</Badge>
           </div>
           <div className="flex items-center space-x-2">
-            <TimerIcon className="text-[#9873CF]" />
+            <TimerIcon className="text-[#3C72BE]" />
             <h4 className="text-lg font-medium text-gray-700">Delivery time:</h4>
             <span className="text-lg font-semibold text-gray-900">30-40 min</span>
           </div>
@@ -50,14 +50,14 @@ const page = () => {
               />
             </CardHeader>
             <CardContent>
-              <CardTitle className="text-xl font-semibold text-[#9873CF]">Napa</CardTitle>
+              <CardTitle className="text-xl font-semibold text-[#3C72BE]">Napa</CardTitle>
               <CardDescription className="text-gray-600 mt-2">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor asperiores numquam nam tempore autem nesciunt minima quidem alias vel sapiente!
               </CardDescription>
             </CardContent>
             <CardFooter className="flex justify-end">
-              <Link href="/search/restaurant/cart">
-                <Button variant="outline" className="bg-[#9873CF] text-white">
+              <Link href="/cart">
+                <Button variant="outline" className="bg-[#3C72BE] text-white">
                   Add to Cart
                 </Button>
               </Link>

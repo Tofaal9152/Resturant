@@ -19,7 +19,7 @@ const page = ({ params }: { params: { id: string } }) => {
   const data = [1, 2, 3, 4];
 
   return (
-    <div className="flex flex-col md:flex-row max-w-7xl mx-auto mt-[2rem] px-4">
+    <div className="flex flex-col md:flex-row max-w-7xl mx-auto mt-[2rem] px-4 bg-slate-50">
       <Filter />
       <div className="flex-1 space-y-7">
         <div className="space-y-3">
@@ -27,28 +27,28 @@ const page = ({ params }: { params: { id: string } }) => {
             <div className="relative flex-1">
               <Search
                 size={20}
-                className="absolute left-2 top-1/2 transform -translate-y-1/2 text-[#9873CF]"
+                className="absolute left-2 top-1/2 transform -translate-y-1/2 text-[#3C72BE]"
               />
               <Input
-                className="w-full pl-10 border-[#9873CF] shadow-sm shadow-[#9873CF] outline-none ring-[#9873CF] ring-0 focus-visible:ring-0"
+                className="w-full pl-10 border-[#3C72BE] shadow-sm shadow-[#3C72BE] outline-none ring-[#3C72BE] ring-0 focus-visible:ring-0"
                 placeholder="Search for medicines or health products"
               />
             </div>
 
             <Button
               variant="outline"
-              className="sm:w-auto bg-[#9873CF] text-white"
+              className="sm:w-auto bg-[#3C72BE] text-white"
             >
               Search
             </Button>
           </div>
-          <p className="text-md text-[#9873CF] font-semibold">
+          <p className="text-md text-[#3C72BE] font-semibold">
             (2) Search result found
           </p>
           <div className="flex items-center space-x-2 flex-wrap">
             {[1, 2, 3, 4].map((item, index) => (
               <Badge
-                className="bg-[#9873CF] text-white cursor-pointer flex items-center justify-center "
+                className="bg-[#3C72BE] text-white cursor-pointer flex items-center justify-center "
                 variant="outline"
                 key={index}
               >
@@ -94,7 +94,7 @@ const page = ({ params }: { params: { id: string } }) => {
                   <div className="mt-2 flex items-center  space-x-2">
                     {[1, 2, 3].map((item, index) => (
                       <Badge
-                        className="bg-[#9873CF] text-white cursor-pointer flex items-center justify-center "
+                        className="bg-[#3C72BE] text-white cursor-pointer flex items-center justify-center "
                         variant="outline"
                         key={index}
                       >
@@ -104,10 +104,10 @@ const page = ({ params }: { params: { id: string } }) => {
                   </div>
                 </CardContent>
                 <CardFooter className="flex justify-end">
-                  <Link href="/search/restaurant/1">
+                  <Link href="/pharmacy/1">
                     <Button
                       variant="outline"
-                      className="bg-[#9873CF] text-white"
+                      className="bg-[#3C72BE] text-white"
                     >
                       View Details
                     </Button>
@@ -151,7 +151,7 @@ const NotFound = () => {
   return (
     <div className="min-h-screen">
       <div>
-        <h1 className="text-xl font-semibold text-[#9873CF]">
+        <h1 className="text-xl font-semibold text-[#3C72BE]">
           No Results Found...
         </h1>
       </div>

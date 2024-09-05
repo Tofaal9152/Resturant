@@ -20,9 +20,9 @@ const VerifyEmail = () => {
   const isButtonDisable = value.length !== 6;
 
   return (
-    <div className="flex items-center justify-center h-screen w-screen bg-[#000319]">
+    <div className="flex items-center justify-center h-screen w-screen bg-[#000319] absolute z-50 top-0">
       <div className="bg-white items-center justify-center flex flex-col mx-auto p-6 rounded-lg shadow-lg w-80">
-        <p className="text-xs mb-3 text-center font-semibold text-[#9873cf]">
+        <p className="text-xs mb-3 text-center font-semibold text-[#3C72BE]">
           Enter the 6-digit code sent to your email
         </p>
         <form onSubmit={handleSubmit}>
@@ -36,7 +36,7 @@ const VerifyEmail = () => {
                 <InputOTPSlot
                   key={i}
                   index={i}
-                  className="border-[#9873cf] font-semibold focus:border-[#7e3ff2] focus:ring-[#9873cf] rounded-md text-center"
+                  className="border-[#3C72BE] font-semibold focus:border-[#3C72BE] focus:ring-[#3C72BE] rounded-md text-center"
                 />
               ))}
             </InputOTPGroup>
@@ -44,7 +44,7 @@ const VerifyEmail = () => {
           <Button
             type="submit"
             disabled={isButtonDisable}
-            className="w-full bg-[#9873cf] text-white py-2 mt-3 rounded-md hover:bg-[#af94f3] transition-colors shadow-sm"
+            className="w-full bg-[#3C72BE] text-white py-2 mt-3 rounded-md  transition-colors shadow-sm"
           >
             {loading ? (
               <>

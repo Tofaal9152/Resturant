@@ -24,10 +24,10 @@ const Hero = () => {
   };
 
   return (
-    <div className="bg-[#f8f9fa] px-[10%] h-[88.5vh] flex items-center justify-center">
+    <div className="bg-slate-50  px-[10%] h-[88.5vh] flex items-center justify-center">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="text-center md:text-left space-y-4 max-w-md">
-          <h1 className="text-5xl font-bold text-[#9873cf]">
+          <h1 className="text-5xl font-bold text-[#3C72BE]">
             Your Trusted Online Pharmacy
           </h1>
           <p className="text-gray-700">
@@ -36,8 +36,8 @@ const Hero = () => {
           </p>
 
           <form onSubmit={submitHandler} className="flex items-center">
-            <div className="flex items-center border border-[#9873cf] rounded-md overflow-hidden px-2 shadow-md shadow-[#9873cf]">
-              <Search size={25} className="text-[#9873cf]" />
+            <div className="flex items-center border border-[#3C72BE] rounded-md overflow-hidden px-2 shadow-md shadow-[#3C72BE]">
+              <Search size={25} className="text-[#3C72BE]" />
               <Input
                 value={input.search}
                 onChange={handleChange}
@@ -50,7 +50,7 @@ const Hero = () => {
             <Button
               type="submit"
               variant="outline"
-              className="ml-3 bg-[#9873cf] text-white"
+              className="ml-3 bg-[#3C72BE] text-white"
             >
               Search
             </Button>

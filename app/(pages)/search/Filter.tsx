@@ -16,7 +16,7 @@ const Filter = () => {
 
   return (
     <div className="w-full md:w-1/6 px-2 ">
-      <div className="text-[#9873cf] text-md font-semibold flex items-center justify-between">
+      <div className="text-[#3C72BE] text-md font-semibold flex items-center justify-between">
         <div>Filter By Category:</div>
         <Button
           variant="outline"
@@ -29,7 +29,7 @@ const Filter = () => {
         {filterData.map((data) => (
           <div
             key={data.id}
-            className="flex items-center space-x-2 text-[#9873cf] font-medium"
+            className="flex items-center space-x-2 text-[#3C72BE] font-medium"
           >
             <Checkbox
               onClick={() => submitHandler(data.id)}
@@ -42,7 +42,7 @@ const Filter = () => {
 
       <Button
         variant="outline"
-        className="w-auto hidden md:flex text-[#9873cf] text-md font-semibold"
+        className="w-auto hidden md:flex text-[#3C72BE] text-md font-semibold"
       >
         Reset
       </Button>
